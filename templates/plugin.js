@@ -44,7 +44,7 @@ configure(<%= JSON.stringify(options.nuxtValidateOptions) %>);
 Vue.component('ValidationProvider', ValidationProvider)
 Vue.component('ValidationObserver', ValidationObserver)
 
-export default ({ app }, inject) => {
+export default ({ app }) => {
   const nuxti18n = <%= options.nuxti18n ? JSON.stringify(options.nuxti18n) : 'null' %>
   if (nuxti18n && app.i18n) {
     const validatorLocale = getLocale(nuxti18n, app.i18n.locale)

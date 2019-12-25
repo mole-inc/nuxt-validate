@@ -1,6 +1,6 @@
 {
-  "name": "nuxt-validate",
-  "version": "1.0.1",
+  "name": "@mole-inc/nuxt-validate",
+  "version": "1.0.0",
   "description": "Simple Nuxt input validation module using vee-validate",
   "main": "src/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lewyuburi/nuxt-validate.git"
+    "url": "https://github.com/mole-inc/nuxt-validate.git"
   },
   "keywords": [
     "nuxt",
@@ -21,16 +21,18 @@
   "author": "Lewis Yuburi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lewyuburi/nuxt-validate/issues"
+    "url": "https://github.com/mole-inc/nuxt-validate/issues"
   },
-  "homepage": "https://github.com/lewyuburi/nuxt-validate#readme",
-  "dependencies": {
-    "vee-validate": "^3.0.8"
+  "homepage": "https://github.com/mole-inc/nuxt-validate#readme",
+  "peerDependencies": {
+    "nuxt": "^2.9.0",
+    "vee-validate": "^3.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/module-test-utils": "latest",
+    "@nuxtjs/module-test-utils": "^1.5.0",
     "jest": "^24.9.0",
-    "nuxt-edge": "latest"
+    "nuxt-edge": "^2.11.1-26287215.0cb2df73",
+    "vee-validate": "^3.2.1"
   },
   "files": [
     "templates"

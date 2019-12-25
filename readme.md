@@ -1,17 +1,30 @@
 # Nuxt Validate
 
+**This is a fork of [lewyuburi/nuxt-validate](https://github.com/lewyuburi/nuxt-validate).**  
+If you use VeeValidate 2, can you consider to use [nuxt-validate](https://github.com/lewyuburi/nuxt-validate/tree/c0879facf4abf461a0fbdbd3afe3fd9247be56ec).
+
 <p>
-  <a href="https://www.npmjs.com/package/nuxt-validate"><img src="https://badgen.net/npm/dm/nuxt-validate" alt="Downloads"></a>
-  <a href="https://www.npmjs.com/package/nuxt-validate"><img src="https://badgen.net/npm/v/nuxt-validate" alt="Version"></a>
-  <a href="https://www.npmjs.com/package/nuxt-validate"><img src="https://badgen.net/npm/license/nuxt-validate" alt="License"></a>
+  <a href="https://www.npmjs.com/package/@mole-inc/nuxt-validate"><img src="https://badgen.net/npm/dm/@mole-inc/nuxt-validate" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/@mole-inc/nuxt-validate"><img src="https://badgen.net/npm/v/@mole-inc/nuxt-validate" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/@mole-inc/nuxt-validate"><img src="https://badgen.net/npm/license/@mole-inc/nuxt-validate" alt="License"></a>
 </p>
 
-Nuxt.js module for validations using [Vee-Validate](https://github.com/logaretm/vee-validate)
+Nuxt.js module for validations using [VeeValidate](https://github.com/logaretm/vee-validate) 3
 
 ## Install
 
+Use npm
+
 ```sh
-npm i --save nuxt-validate
+npm i vee-validate -S
+npm i @mole-inc/nuxt-validate -D
+```
+
+or yarn
+
+```sh
+yarn add vee-validate
+yarn add @mole-inc/nuxt-validate --dev
 ```
 
 ## Usage
@@ -20,7 +33,7 @@ Add module to nuxt.config.js
 
 ```js
 module.exports = {
-  modules: [
+  buildModules: [
     ...
     ['nuxt-validate', {
       lang: 'es',
@@ -41,7 +54,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  modules: [
+  buildModules: [
     'nuxt-validate'
   ],
   nuxtValidate: {
