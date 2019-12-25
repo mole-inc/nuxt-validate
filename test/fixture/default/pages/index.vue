@@ -1,9 +1,11 @@
 <template>
   <ValidationObserver v-slot="{ invalid, valid }" ref="observer">
-    <ValidationProvider rules="required|min:3|alpha" v-slot="{ errors }" :bails="false">
+    <ValidationProvider v-slot="{ errors }" rules="required|min:3|alpha" :bails="false">
       <input v-model="value" type="text">
       <ul>
-        <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
+        <li v-for="(error, index) in errors" :key="index">
+          {{ error }}
+        </li>
       </ul>
     </ValidationProvider>
     <p>It works!</p>
@@ -14,13 +16,13 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-      value: "1"
+      value: '1'
     }
   },
-  mounted() {
-    this.$refs.observer.validate();
+  mounted () {
+    this.$refs.observer.validate()
   }
 }
 </script>

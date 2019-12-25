@@ -4,7 +4,10 @@
   "description": "Simple Nuxt input validation module using vee-validate",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "lint": "eslint --ext .js,.vue src test",
+    "lint:fix": "eslint --fix --ext .js,.vue src test",
+    "test": "jest",
+    "release": "npm test && standard-version && git push --follow-tags && npm publish"
   },
   "repository": {
     "type": "git",
@@ -29,9 +32,15 @@
     "vee-validate": "^3.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/module-test-utils": "^1.5.0",
+    "eslint": "^6.8.0",
+    "husky": "^3.1.0",
     "jest": "^24.9.0",
     "nuxt-edge": "^2.11.1-26287215.0cb2df73",
+    "standard-version": "^7.0.1",
     "vee-validate": "^3.2.1"
   },
   "files": [

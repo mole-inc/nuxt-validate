@@ -1,5 +1,4 @@
 const { resolve } = require('path')
-const hoge = require('../../..')
 
 module.exports = {
   rootDir: resolve(__dirname, '../../..'),
@@ -11,5 +10,5 @@ module.exports = {
   modules: [
     { handler: require('../../..') }
   ],
-  nuxtValidate: { rules: ["required", "min", "alpha"], lang: "ja" }
+  nuxtValidate: { rules: ['required', 'min', 'alpha'], lang: 'ja' }
 }

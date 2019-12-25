@@ -15,7 +15,7 @@ module.exports = {
           valid: 'is-valid',
           invalid: ['is-invalid', 'bad']
         },
-        lang: "es"
+        lang: 'es'
       }
     ]
   ]
