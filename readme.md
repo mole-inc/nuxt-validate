@@ -3,11 +3,10 @@
 **This is a fork of [lewyuburi/nuxt-validate](https://github.com/lewyuburi/nuxt-validate).**  
 If you use VeeValidate 2, can you consider to use [nuxt-validate](https://github.com/lewyuburi/nuxt-validate/tree/c0879facf4abf461a0fbdbd3afe3fd9247be56ec).
 
-<p>
-  <a href="https://www.npmjs.com/package/@mole-inc/nuxt-validate"><img src="https://badgen.net/npm/dm/@mole-inc/nuxt-validate" alt="Downloads"></a>
-  <a href="https://www.npmjs.com/package/@mole-inc/nuxt-validate"><img src="https://badgen.net/npm/v/@mole-inc/nuxt-validate" alt="Version"></a>
-  <a href="https://www.npmjs.com/package/@mole-inc/nuxt-validate"><img src="https://badgen.net/npm/license/@mole-inc/nuxt-validate" alt="License"></a>
-</p>
+[![Downloads](https://badgen.net/npm/dm/@mole-inc/nuxt-validate)](https://www.npmjs.com/package/@mole-inc/nuxt-validate)
+[![Version](https://badgen.net/npm/v/@mole-inc/nuxt-validate)](https://www.npmjs.com/package/@mole-inc/nuxt-validate)
+[![License](https://badgen.net/npm/license/@mole-inc/nuxt-validate)](https://www.npmjs.com/package/@mole-inc/nuxt-validate)
+[![codecov](https://codecov.io/gh/mole-inc/nuxt-validate/branch/master/graph/badge.svg)](https://codecov.io/gh/mole-inc/nuxt-validate)
 
 Nuxt.js module for validations using [VeeValidate](https://github.com/logaretm/vee-validate) 3
 
