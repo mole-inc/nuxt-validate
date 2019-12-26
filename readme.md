@@ -29,13 +29,15 @@ yarn add @mole-inc/nuxt-validate --dev
 
 ## Usage
 
-Add module to nuxt.config.js
+Add `@mole-inc/nuxt-validate` to `buildModules`.
+
+`nuxt.config.js`
 
 ```js
 module.exports = {
   buildModules: [
     ...
-    ['nuxt-validate', {
+    ['@mole-inc/nuxt-validate', {
       lang: 'es',
       nuxti18n: {
         locale: {
@@ -55,10 +57,10 @@ module.exports = {
 ```js
 module.exports = {
   buildModules: [
-    'nuxt-validate'
+    '@mole-inc/nuxt-validate'
   ],
   nuxtValidate: {
-    lang: 'es',
+    rules: ['required']
     nuxti18n: {
       locale: {
         'zh-CN': 'zh_CN'
@@ -84,9 +86,7 @@ If `undefined`, importing all rules.
 When listed from [validation-rules](https://logaretm.github.io/vee-validate/api/rules.html#validation-rules), importing it.
 
 ```js
-nuxti18n: {
-  rules: ['alpha_dash', 'min']
-}
+rules: ['alpha_dash', 'min']
 ```
 
 #### `nuxti18n`
