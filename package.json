@@ -39,11 +39,18 @@
     "eslint": "^6.8.0",
     "husky": "^3.1.0",
     "jest": "^24.9.0",
-    "nuxt-edge": "^2.11.1-26287215.0cb2df73",
+    "nuxt": "^2.11.0",
     "standard-version": "^7.0.1",
     "vee-validate": "^3.2.1"
   },
   "files": [
     "templates"
-  ]
+  ],
+  "engines": {
+    "node": ">=10",
+    "yarn": "^1.19.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
